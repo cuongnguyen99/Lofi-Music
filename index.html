@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lofi Custom</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header__title">Now playing:</p>
+            <h3 class="header__song">Lần hẹn hò đầu tiên</h3>
+        </div>
+        <div class="main playing">
+            <div class="main__cd"></div>
+            <div class="main__tools">
+                <div class="btn btn-loop"><i class="fas fa-redo-alt"></i></div>
+                <div class="btn btn-back"><i class="fas fa-step-backward"></i></div>
+                <div class="btn btn-main">
+                    <i class="fas fa-pause-circle icon-pause"></i>
+                    <i class="fas fa-play-circle icon-play"></i>
+                </div>
+                <div class="btn btn-next"><i class="fas fa-step-forward"></i></div>
+                <div class="btn btn-random"><i class="fas fa-random"></i></div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="0.5" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="list" id="scroll">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
