@@ -116,20 +116,21 @@ const app = {
         }
         let allSong = selectAll('.song');
         allSong[this.currenIndex].classList.add('active');
+        this.scrollToActive();
     },
     nextSong: function() {
         this.currenIndex++;
         if (this.currenIndex >= this.songs.length) {
             this.currenIndex = 0;
         }
-        this.scrollToActive();
+        // this.scrollToActive();
     },
     backSong: function() {
         this.currenIndex--;
         if (this.currenIndex < 0) {
             this.currenIndex = this.songs.length - 1;
         }
-        this.scrollToActive();
+        // this.scrollToActive();
     },
     playRandomSong: function() {
         let tmp = Math.floor(Math.random() * this.songs.length);
@@ -260,6 +261,7 @@ const app = {
             }
             else{
                 nextBtn.click();
+                // this.scrollToActive();
             }
         }
         // Khi ấn vào 1 bài hát
